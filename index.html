@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkyVibe - Météo & Ambiance</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Fichier CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="weather-default">
+
+    <div class="card">
+        
+        <h1>SkyVibe 🌤️</h1>
+        
+        <!-- Barre de recherche -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Entrer une ville...">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+        <!-- Zone d'affichage (cachée au début) -->
+        <div class="weather-info" id="weather-info" style="display: none;">
+            <h2 id="city-name">-</h2>
+            <div class="temp-icon">
+                <span id="temperature">--°C</span>
+                <i id="weather-icon" class="fa-solid fa-sun"></i>
+            </div>
+            <p id="weather-desc">-</p>
+            
+            <!-- Carte de suggestion personnalisée -->
+            <div class="suggestion-box">
+                <p id="suggestion-text">-</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fichier JS -->
+    <script src="script.js"></script>
+</body>
+</html>
